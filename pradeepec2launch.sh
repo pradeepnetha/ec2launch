@@ -1,5 +1,5 @@
-echo "enter ami id"
-read img_id
+#echo "enter ami id"
+#read img_id
 #echo "enter instance type"
 #read instance_type
 #echo "select key-pair"
