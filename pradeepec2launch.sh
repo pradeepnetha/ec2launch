@@ -41,7 +41,7 @@ grep InstanceId information.txt | tr -d '", ":' > InstanceId
 sed -i 's/InstanceId//g' InstanceId
 InstanceId=$( cat InstanceId )
 echo $InstanceId
-aws ec2 create-tags --resources $InstanceId --tags Key=Name,Value=Web3
+aws ec2 create-tags --resources $InstanceId --region $region_name  --tags Key=Name,Value=Web3
 
 #}
 
