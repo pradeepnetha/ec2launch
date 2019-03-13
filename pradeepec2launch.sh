@@ -12,11 +12,11 @@
 #read region_name
 
 #img_id=ami-0b500ef59d8335eee
-#instance_type=t2.micro
-#key_name=asg-new
-#sg_name=sg-04a6d324940433647
-#sub_id=subnet-0e7e366cb34aca9b2
-#region_name=us-east-2
+instance_type=t2.micro
+key_name=asg-new
+sg_name=sg-04a6d324940433647
+sub_id=subnet-0e7e366cb34aca9b2
+region_name=us-east-2
 
 img_id=$1
 instance_type=$2
