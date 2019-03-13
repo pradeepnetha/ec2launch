@@ -36,7 +36,7 @@ region_name=us-east-2
 #aws ec2 create-tags --resources $InstanceId --tags Key=Name,Value=Web3
 
 #instancelaunch() {
-aws ec2 run-instances --image-id $img_id --count 1 --instance-type $instance_type --key-name $key_name --security-group-ids $sg_name --subnet-id $sub_id --region $region_name > information.txt
+aws ec2 run-instances --image-id $img_id --count 1 --instance-type $instance_type --key-name $key_name --security-group-ids $sg_name --subnet-id $sub_id --region us-east-2 > information.txt
 grep InstanceId information.txt | tr -d '", ":' > InstanceId
 sed -i 's/InstanceId//g' InstanceId
 InstanceId=$( cat InstanceId )
