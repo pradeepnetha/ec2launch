@@ -24,6 +24,9 @@ sub_id=$3
 region_name=$4
 sg_name=$5
 key_name=$6
+tag_name=$7
+tag_name=$8
+tag_instance=$9
 
 
 #aws ec2 run-instances --image-id ami-abc12345 --count 1 --instance-type t2.micro --key-name MyKeyPair --subnet-id subnet-6e7f829e --tag-specifications 'ResourceType=instance,Tags=[{Key=webserver,Value=production}]' 'ResourceType=volume,Tags=[{Key=cost-center,Value=cc123}]' 
