@@ -48,7 +48,7 @@ echo $Insta_Id
 echo $tag_name
 echo $tag_value
 echo $tag_instance
-aws ec2 create-tags --resources $InstanceId --region $region_name --tags Key=$tag_name,Value=$tag_value Key=Name,Value=$tag_instance
+aws ec2 create-tags --resources $Instance_Id --region $region_name --tags Key=$tag_name,Value=$tag_value Key=Name,Value=$tag_instance
 #}
 
 #instancelaunch
