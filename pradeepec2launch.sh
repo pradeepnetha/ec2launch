@@ -25,7 +25,7 @@ region_name=$4
 sg_name=$5
 key_name=$6
 tag_name=$7
-tag_name=$8
+tag_value=$8
 tag_instance=$9
 
 
